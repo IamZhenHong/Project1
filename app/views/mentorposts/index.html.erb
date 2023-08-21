@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mentorposts</h1>
+
+<div id="mentorposts">
+  <% @mentorposts.each do |mentorpost| %>
+    <%= render mentorpost %>
+    <p>
+      <%= link_to "Show this mentorpost", mentorpost %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mentorpost", new_mentorpost_path %>

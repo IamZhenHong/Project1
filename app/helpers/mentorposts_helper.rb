@@ -1,0 +1,2 @@
+module MentorpostsHelper
+end
